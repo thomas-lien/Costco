@@ -17,7 +17,7 @@ class CostcoMember
     
     public:
     
-    enum class Kind {BUSINESS, EXECUTIVE, GOLDSTAR};
+    enum class Kind {BUSINESS, EXECUTIVE, GOLDSTAR}; // each with set/defined value
     CostcoMember(string name, string number, Kind kind);
     string getName();
     string getNumber();
@@ -32,9 +32,6 @@ class CostcoMember
     double issueReward();
     
     
-     // purchase total variable
-    
-    
     private:
     
     string mName;
@@ -42,7 +39,7 @@ class CostcoMember
     Kind mKind;
     int mTripCount;
     double mPurchaseTotal;
-     // DO I SET THIS TO 0?
+
         
     
     
