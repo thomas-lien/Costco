@@ -1,9 +1,9 @@
 //
-//  main.cpp
-//  Project 5
+//  main.cpp 
+//  Project 5 
 //
 //  Created by Thomas Lien on 2/20/25.
-//
+//Simulates information and thoroughly tests if the implementations/declarations for CostcoMember and CostcoWarehouse are functional
 
 #include "CostcoMember.h"
 #include "CostcoWarehouse.h"
