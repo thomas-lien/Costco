@@ -16,7 +16,8 @@ CostcoMember::CostcoMember (string name, string number, Kind kind) {
    // mTripCount = TripCount;
 }
 
-string CostcoMember::getName()
+//returns information regarding CostcoMember
+string CostcoMember::getName() 
 {
     return mName;
 }
@@ -32,9 +33,10 @@ CostcoMember::Kind CostcoMember::getKind()
 
 int CostcoMember::getTripCount() const
 {
-    return mTripCount; // what to do if trip count is set to a negative number
+    return mTripCount; // possisble edge case: what to do if trip count is set to a negative number
 }
 
+//methods that update information stored about the Costco member
 void CostcoMember::incrementTripCount()
 {
     mTripCount += 1; // increment by 1 -- need to check if this is a variable amount
@@ -45,12 +47,12 @@ void CostcoMember::clearTripCount()
     mTripCount = 0; // set equal to zero
 }
 
-double CostcoMember::getPurchaseTotal()
+double CostcoMember::getPurchaseTotal() // getter 
 {
     return mPurchaseTotal;
 }
 
-//what if the numbers are negative? ***************************************
+//edge case to be aware of: what if the numbers are negative? ***
 
 
 void CostcoMember::incrementPurchaseTotal(double amount)
